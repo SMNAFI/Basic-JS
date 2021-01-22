@@ -79,5 +79,3 @@ function megaFriend(friends){
 
     return friends[largestNamePosition];
 }
-
-console.log(megaFriend(['fff', 'fff', '', '  ']));
