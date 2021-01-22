@@ -1,4 +1,4 @@
-
+// https://github.com/SMNAFI/Basic-JS
 
 
 function kilometerToMeter(distance) {
@@ -15,16 +15,16 @@ function kilometerToMeter(distance) {
     return distanceInMeter;
 }
 
-function budgetCalculator(watch, phone, laptop) {
+function budgetCalculator(watch, mobile, laptop) {
     //for handling corner cases
-    if(watch < 0 || phone < 0 || laptop < 0) {
-        return "Please enter correct value.";
+    if(watch < 0 || mobile < 0 || laptop < 0) {
+        return "Please enter positive value.";
     }
-    else if(typeof(watch) != "number" || typeof(phone) != "number" || typeof(laptop) != "number") {
+    else if(typeof(watch) != "number" || typeof(mobile) != "number" || typeof(laptop) != "number") {
         return "Please enter value in numeric form."
     }
 
-    var totalCost = (watch * 50) + (phone * 100) + (laptop * 500);
+    var totalCost = (watch * 50) + (mobile * 100) + (laptop * 500);
 
     return totalCost;
 }
@@ -80,3 +80,4 @@ function megaFriend(friends){
     return friends[largestNamePosition];
 }
 
+console.log(megaFriend(['fff', 'fff', '', '  ']));
